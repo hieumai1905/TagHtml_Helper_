@@ -1,0 +1,17 @@
+﻿@model TagHtml_helper_.Views.Home.Demo
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h1>Html helper</h1>
+@Html.Label("UserName")
+@Html.TextBox("UserName", "Mai van hieu", new { @class = "text-primary" })
+<br>
+<br>
+<h1>Tag helper</h1>
+<form>
+    <label asp-for="UserName"></label>
+    <input asp-for="UserName" class = "text-primary" value="Mai Van Hieu"/>
+</form>
